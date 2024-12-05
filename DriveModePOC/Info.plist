@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>Please allow access to bluetooth</string>
+	<key>UISupportedExternalAccessoryProtocols</key>
+	<array>
+		<string>com.apple.carplay</string>
+	</array>
+	<key>NSBluetoothPeripheralUsageDescription</key>
+	<string>Please allow access to bluetooth peripheral</string>
+</dict>
+</plist>
