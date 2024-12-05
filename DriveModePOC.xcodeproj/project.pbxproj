@@ -7,18 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		327646502CFDDEA900A3BE14 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */; };
+		328171532D003A1F000D8938 /* USBAccessoryChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328171522D003A1F000D8938 /* USBAccessoryChecker.swift */; };
+		3281715A2D019001000D8938 /* CarConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328171592D019001000D8938 /* CarConnectionView.swift */; };
+		3281715C2D01AF40000D8938 /* PairedDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281715B2D01AF40000D8938 /* PairedDevicesManager.swift */; };
+		3281715E2D01AF7A000D8938 /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281715D2D01AF7A000D8938 /* DeviceDetailView.swift */; };
+		328171602D01AFDA000D8938 /* PairedDevicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281715F2D01AFDA000D8938 /* PairedDevicesView.swift */; };
 		3285B4E22CF5B2300050723C /* DriveModePOCApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285B4E12CF5B2300050723C /* DriveModePOCApp.swift */; };
 		3285B4E42CF5B2300050723C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285B4E32CF5B2300050723C /* ContentView.swift */; };
 		3285B4E62CF5B2310050723C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3285B4E52CF5B2310050723C /* Assets.xcassets */; };
 		3285B4E92CF5B2310050723C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3285B4E82CF5B2310050723C /* Preview Assets.xcassets */; };
+		3285B4F02CF5B3B80050723C /* DrivingDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285B4EF2CF5B3B80050723C /* DrivingDetector.swift */; };
+		3285B4F22CF5B3D00050723C /* DriveModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3285B4F12CF5B3D00050723C /* DriveModeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
+		328171522D003A1F000D8938 /* USBAccessoryChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBAccessoryChecker.swift; sourceTree = "<group>"; };
+		328171542D003A69000D8938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		328171592D019001000D8938 /* CarConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarConnectionView.swift; sourceTree = "<group>"; };
+		3281715B2D01AF40000D8938 /* PairedDevicesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDevicesManager.swift; sourceTree = "<group>"; };
+		3281715D2D01AF7A000D8938 /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
+		3281715F2D01AFDA000D8938 /* PairedDevicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairedDevicesView.swift; sourceTree = "<group>"; };
 		3285B4DE2CF5B2300050723C /* DriveModePOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DriveModePOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3285B4E12CF5B2300050723C /* DriveModePOCApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveModePOCApp.swift; sourceTree = "<group>"; };
 		3285B4E32CF5B2300050723C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3285B4E52CF5B2310050723C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3285B4E82CF5B2310050723C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3285B4EF2CF5B3B80050723C /* DrivingDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrivingDetector.swift; sourceTree = "<group>"; };
+		3285B4F12CF5B3D00050723C /* DriveModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveModeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +68,19 @@
 		3285B4E02CF5B2300050723C /* DriveModePOC */ = {
 			isa = PBXGroup;
 			children = (
+				328171542D003A69000D8938 /* Info.plist */,
 				3285B4E12CF5B2300050723C /* DriveModePOCApp.swift */,
 				3285B4E32CF5B2300050723C /* ContentView.swift */,
 				3285B4E52CF5B2310050723C /* Assets.xcassets */,
 				3285B4E72CF5B2310050723C /* Preview Content */,
+				3285B4EF2CF5B3B80050723C /* DrivingDetector.swift */,
+				3285B4F12CF5B3D00050723C /* DriveModeView.swift */,
+				3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */,
+				328171522D003A1F000D8938 /* USBAccessoryChecker.swift */,
+				328171592D019001000D8938 /* CarConnectionView.swift */,
+				3281715B2D01AF40000D8938 /* PairedDevicesManager.swift */,
+				3281715D2D01AF7A000D8938 /* DeviceDetailView.swift */,
+				3281715F2D01AFDA000D8938 /* PairedDevicesView.swift */,
 			);
 			path = DriveModePOC;
 			sourceTree = "<group>";
@@ -99,6 +125,7 @@
 				TargetAttributes = {
 					3285B4DD2CF5B2300050723C = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 				};
 			};
@@ -137,8 +164,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3281715E2D01AF7A000D8938 /* DeviceDetailView.swift in Sources */,
+				3281715C2D01AF40000D8938 /* PairedDevicesManager.swift in Sources */,
+				3281715A2D019001000D8938 /* CarConnectionView.swift in Sources */,
+				3285B4F22CF5B3D00050723C /* DriveModeView.swift in Sources */,
+				328171532D003A1F000D8938 /* USBAccessoryChecker.swift in Sources */,
 				3285B4E42CF5B2300050723C /* ContentView.swift in Sources */,
 				3285B4E22CF5B2300050723C /* DriveModePOCApp.swift in Sources */,
+				328171602D01AFDA000D8938 /* PairedDevicesView.swift in Sources */,
+				3285B4F02CF5B3B80050723C /* DrivingDetector.swift in Sources */,
+				327646502CFDDEA900A3BE14 /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,24 +304,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DriveModePOC/Preview Content\"";
+				DEVELOPMENT_TEAM = 389NSXC8NR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DriveModePOC/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion data to detect activities like walking, running, and driving for personalized features.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tets.DriveModePOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.logituit.toggle.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -297,24 +339,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"DriveModePOC/Preview Content\"";
+				DEVELOPMENT_TEAM = 389NSXC8NR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DriveModePOC/Info.plist;
+				INFOPLIST_KEY_NSMotionUsageDescription = "This app uses motion data to detect activities like walking, running, and driving for personalized features.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tets.DriveModePOC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.logituit.toggle.staging;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
