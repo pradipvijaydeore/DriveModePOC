@@ -8,47 +8,60 @@ import CoreMotion
 import SwiftUI
 
 class DrivingDetector: ObservableObject {
+    // MARK: - Properties
     private let motionActivityManager = CMMotionActivityManager()
+
     @Published var isDriving = false
     @Published var activity: CMMotionActivity?
-    
+    @Published var motionData: CMDeviceMotion?
+    @Published var activityName: String?
+
+    //private var activityBuffer: [CMMotionActivity] = []
+
+    // MARK: - Start Monitoring
     func startMonitoring() {
-        
-        checkUSBConnection()
-        
         guard CMMotionActivityManager.isActivityAvailable() else {
+            print("Motion Activity updates are not available.")
             return
         }
-        motionActivityManager.startActivityUpdates(to: .main) { [weak self] activity in
-            guard let self else { return }
-            guard let activity else { return }
-            DispatchQueue.main.async {
-                self.activity = activity
-                self.isDriving = activity.automotive
-            }
-        }
+
+        // Start Activity Updates
+        beginMotionTracking()
     }
-    
+
+    // MARK: - Stop Monitoring
     func stopMonitoring() {
         motionActivityManager.stopActivityUpdates()
     }
-    
-    func checkDeviceStatus() {
-        // Check if user is driving
-       // checkIfUserIsDriving()
-        
-        // Check Bluetooth connection
-       // checkBluetoothConnection()
-        
-        // Check USB connection
-        checkUSBConnection()
+
+    // MARK: - Motion Tracking
+    private func beginMotionTracking() {
+        motionActivityManager.startActivityUpdates(to: .main) { [weak self] activity in
+            guard let self, let activity else { return }
+
+            DispatchQueue.main.async {
+                self.handleActivityUpdate(activity)
+            }
+        }
     }
-    func checkUSBConnection() {
-        let device = UIDevice.current
-        if device.batteryState == .charging {
-            print("Device is connected to power (could be USB)")
-        } else {
-            print("Device is not charging")
+
+    // MARK: - Handle Activity Update
+    private func handleActivityUpdate(_ activity: CMMotionActivity) {
+        let confidence = getName(confidence: activity.confidence)
+        activityName = " Stationary: \(activity.stationary) \n Automotive: \(activity.automotive) \n Confidence: \(confidence)"
+            print(activityName!)    }
+    
+    func getName(confidence: CMMotionActivityConfidence) -> String {
+        switch confidence {
+        case .low:
+            return "low"
+        case .medium:
+            return "medium"
+        case .high:
+            return "high"
+        @unknown default:
+            return "default"
         }
     }
 }
+

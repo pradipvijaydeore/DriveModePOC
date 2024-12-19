@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		327646502CFDDEA900A3BE14 /* BluetoothManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */; };
 		328171532D003A1F000D8938 /* USBAccessoryChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328171522D003A1F000D8938 /* USBAccessoryChecker.swift */; };
 		3281715A2D019001000D8938 /* CarConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328171592D019001000D8938 /* CarConnectionView.swift */; };
 		3281715C2D01AF40000D8938 /* PairedDevicesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3281715B2D01AF40000D8938 /* PairedDevicesManager.swift */; };
@@ -22,7 +21,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothManager.swift; sourceTree = "<group>"; };
 		328171522D003A1F000D8938 /* USBAccessoryChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBAccessoryChecker.swift; sourceTree = "<group>"; };
 		328171542D003A69000D8938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		328171592D019001000D8938 /* CarConnectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarConnectionView.swift; sourceTree = "<group>"; };
@@ -75,7 +73,6 @@
 				3285B4E72CF5B2310050723C /* Preview Content */,
 				3285B4EF2CF5B3B80050723C /* DrivingDetector.swift */,
 				3285B4F12CF5B3D00050723C /* DriveModeView.swift */,
-				3276464F2CFDDEA900A3BE14 /* BluetoothManager.swift */,
 				328171522D003A1F000D8938 /* USBAccessoryChecker.swift */,
 				328171592D019001000D8938 /* CarConnectionView.swift */,
 				3281715B2D01AF40000D8938 /* PairedDevicesManager.swift */,
@@ -173,7 +170,6 @@
 				3285B4E22CF5B2300050723C /* DriveModePOCApp.swift in Sources */,
 				328171602D01AFDA000D8938 /* PairedDevicesView.swift in Sources */,
 				3285B4F02CF5B3B80050723C /* DrivingDetector.swift in Sources */,
-				327646502CFDDEA900A3BE14 /* BluetoothManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

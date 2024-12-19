@@ -15,6 +15,7 @@ struct PairedDevicesView: View {
     }
     
     var body: some View {
+        Text("Paired Devices")
         NavigationView {
             List {
                 ForEach(carConnectionDetector.pairedDevicesManager.devices) { device in
@@ -22,11 +23,6 @@ struct PairedDevicesView: View {
                         Text(device.name)
                     }
                 }
-                .onDelete(perform: carConnectionDetector.pairedDevicesManager.deleteDevice)
-            }
-            .navigationTitle("Paired Devices")
-            .toolbar {
-                EditButton()
             }
             .onAppear {
                 carConnectionDetector.pairedDevicesManager.loadDevices()
